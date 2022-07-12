@@ -1,0 +1,57 @@
+body {
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.intro h5 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.text-center.img-center {
+  margin-top: 80px;
+}
+
+.c-list a {
+  padding: 20px;
+  background-color: #fff;
+  display: block;
+  margin: 0;
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+
+.c-list img {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav.nav-tabs {
+  margin-top: 30px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid;
+}
+
+.nav-tabs .nav-link {
+  color: #d3cece;
+}

